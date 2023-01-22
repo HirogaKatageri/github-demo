@@ -3,7 +3,7 @@ package dev.hirogakatageri.github.demo
 import android.app.Application
 import dev.hirogakatageri.github.demo.data.ServiceProvider
 import dev.hirogakatageri.github.demo.data.service.GithubService
-import dev.hirogakatageri.github.demo.domain.users.UsersRepository
+import dev.hirogakatageri.github.demo.domain.user.UsersRepository
 import dev.hirogakatageri.github.demo.ui.main.MainViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel

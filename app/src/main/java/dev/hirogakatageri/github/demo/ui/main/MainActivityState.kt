@@ -1,6 +1,6 @@
 package dev.hirogakatageri.github.demo.ui.main
 
-import dev.hirogakatageri.github.demo.data.users.UserRemoteData
+import dev.hirogakatageri.github.demo.data.user.UserRemoteData
 
 sealed interface MainActivityState {
 

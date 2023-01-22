@@ -1,8 +1,8 @@
 package dev.hirogakatageri.github.demo.ui.main
 
 import com.airbnb.epoxy.EpoxyController
-import dev.hirogakatageri.github.demo.data.users.UserRemoteData
-import dev.hirogakatageri.github.demo.ui.users.userItemView
+import dev.hirogakatageri.github.demo.data.user.UserRemoteData
+import dev.hirogakatageri.github.demo.ui.user.userItemView
 
 class MainActivityEpoxyController : EpoxyController() {
 

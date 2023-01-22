@@ -1,9 +1,9 @@
-package dev.hirogakatageri.github.demo.ui.users
+package dev.hirogakatageri.github.demo.ui.user
 
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyModelClass
 import dev.hirogakatageri.github.demo.R
-import dev.hirogakatageri.github.demo.data.users.UserRemoteData
+import dev.hirogakatageri.github.demo.data.user.UserRemoteData
 import dev.hirogakatageri.github.demo.databinding.ItemUserBinding
 import dev.hirogakatageri.github.demo.ui.helper.ViewBindingEpoxyModelWithHolder
 

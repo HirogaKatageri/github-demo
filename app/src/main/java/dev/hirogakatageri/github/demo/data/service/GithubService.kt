@@ -1,7 +1,7 @@
 package dev.hirogakatageri.github.demo.data.service
 
-import dev.hirogakatageri.github.demo.data.ItemsWrapper
-import dev.hirogakatageri.github.demo.data.users.UserRemoteData
+import dev.hirogakatageri.github.demo.data.helper.ItemsWrapper
+import dev.hirogakatageri.github.demo.data.user.UserRemoteData
 import retrofit2.http.GET
 import retrofit2.http.Query
 

@@ -1,4 +1,4 @@
-package dev.hirogakatageri.github.demo.domain.users
+package dev.hirogakatageri.github.demo.domain.user
 
 import dev.hirogakatageri.github.demo.data.service.GithubService
 

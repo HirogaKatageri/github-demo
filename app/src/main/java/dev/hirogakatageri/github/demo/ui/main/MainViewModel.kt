@@ -2,7 +2,7 @@ package dev.hirogakatageri.github.demo.ui.main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dev.hirogakatageri.github.demo.domain.users.UsersRepository
+import dev.hirogakatageri.github.demo.domain.user.UsersRepository
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

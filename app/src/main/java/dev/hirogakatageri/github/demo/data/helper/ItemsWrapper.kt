@@ -1,4 +1,4 @@
-package dev.hirogakatageri.github.demo.data
+package dev.hirogakatageri.github.demo.data.helper
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
