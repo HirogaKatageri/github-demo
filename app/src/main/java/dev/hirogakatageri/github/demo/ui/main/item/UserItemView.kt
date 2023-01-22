@@ -1,4 +1,4 @@
-package dev.hirogakatageri.github.demo.ui.user
+package dev.hirogakatageri.github.demo.ui.main.item
 
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyModelClass

@@ -2,9 +2,12 @@ package dev.hirogakatageri.github.demo.ui.main
 
 import com.airbnb.epoxy.EpoxyController
 import dev.hirogakatageri.github.demo.data.user.UserRemoteData
-import dev.hirogakatageri.github.demo.ui.user.userItemView
+import dev.hirogakatageri.github.demo.ui.main.item.loaderItemView
+import dev.hirogakatageri.github.demo.ui.main.item.userItemView
 
 class MainActivityEpoxyController : EpoxyController() {
+
+    var isLoading: Boolean = false
 
     private val _users: MutableList<UserRemoteData> = mutableListOf()
 
@@ -14,10 +17,16 @@ class MainActivityEpoxyController : EpoxyController() {
     }
 
     override fun buildModels() {
-        _users.forEach { user ->
-            userItemView {
-                id(user.id)
-                data(user)
+        if (isLoading) {
+            loaderItemView {
+                id("loader")
+            }
+        } else {
+            _users.forEach { user ->
+                userItemView {
+                    id(user.id)
+                    data(user)
+                }
             }
         }
     }

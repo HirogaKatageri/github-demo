@@ -45,12 +45,20 @@ class MainActivity : ComponentActivity() {
         repeatOnLifecycle(Lifecycle.State.STARTED) {
             viewModel.state.collectLatest { state ->
                 when (state) {
-                    MainActivityState.Error -> onError()
+                    MainActivityState.Error -> {
+                        onError()
+                        epoxyController.isLoading = false
+                        epoxyController.requestModelBuild()
+                    }
                     is MainActivityState.Ready -> {
+                        epoxyController.isLoading = false
                         epoxyController.setUsers(state.data)
                         epoxyController.requestModelBuild()
                     }
-                    MainActivityState.Searching -> Unit
+                    MainActivityState.Searching -> {
+                        epoxyController.isLoading = true
+                        epoxyController.requestModelBuild()
+                    }
                 }
             }
         }
