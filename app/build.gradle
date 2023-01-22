@@ -3,6 +3,14 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+def secrets = new Properties()
+File secretFile = rootProject.file("secrets.properties")
+
+if (secretFile.exists()) {
+    def stream = new FileInputStream(secretFile)
+    secrets.load(stream)
+}
+
 android {
     namespace 'dev.hirogakatageri.github.demo'
     compileSdk 33
@@ -13,6 +21,8 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
+
+        buildConfigField "String", "GITHUB_TOKEN", secrets["GITHUB_TOKEN"]
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
