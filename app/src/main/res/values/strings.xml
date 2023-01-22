@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Github Demo</string>
     <string name="hint_user_search">Search Users…</string>
+    <string name="error_user_query">Unable to query users, please try again later</string>
 </resources>
